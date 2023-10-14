@@ -1,7 +1,7 @@
 
 use rlua::{Lua, Function};
 
-fn start_lua() -> rlua::Result<()> {
+pub fn start_lua() -> rlua::Result<()> {
     // Create a Lua context
     let lua = Lua::new();
 
@@ -38,8 +38,4 @@ fn start_lua() -> rlua::Result<()> {
         
         Ok(())
     })
-}
-
-pub fn Testing(){
-    println!("testing, ahora en latinoamerica");
 }
