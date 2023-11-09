@@ -27,6 +27,7 @@ pub fn start_lua() -> rlua::Result<()> {
         .exec()?;
         // Get a reference to the Lua function
         //let add_function: Function = lua_ctx.globals().get("add")?;
+        //lua_ctx.
 
         let tester_function: Function = lua_ctx.globals().get("tester")?;
         tester_function.call(())?;
